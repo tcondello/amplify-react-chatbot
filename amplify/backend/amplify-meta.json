@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-chatbot-dev-233944-authRole",
+      "UnauthRoleArn": "arn:aws:iam::733452200191:role/amplify-chatbot-dev-233944-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::733452200191:role/amplify-chatbot-dev-233944-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-chatbot-dev-233944-deployment",
+      "UnauthRoleName": "amplify-chatbot-dev-233944-unauthRole",
+      "StackName": "amplify-chatbot-dev-233944",
+      "StackId": "arn:aws:cloudformation:us-east-1:733452200191:stack/amplify-chatbot-dev-233944/6a387700-1056-11ec-9303-123305437ed3",
+      "AmplifyAppId": "d2ex74i97ukel1"
+    }
+  },
+  "auth": {
+    "cognito8c74d591": {
+      "service": "Cognito",
+      "serviceType": "managed",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chatbot-dev-233944-deployment/amplify-cfn-templates/auth/cognito8c74d591-cloudformation-template.yml",
+        "logicalId": "authcognito8c74d591"
+      },
+      "lastPushTimeStamp": "2021-09-08T03:48:18.935Z",
+      "output": {
+        "IdentityPoolId": "us-east-1:4ad43489-02d1-46f2-9500-86511fdef203",
+        "IdentityPoolName": "chatbot_identitypool_8c74d591__dev"
+      },
+      "lastPushDirHash": "724orI1QPs/LZINCHq+m+cNzeH8="
+    }
+  },
+  "interactions": {
+    "lex8deae642": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "lastPackageTimeStamp": "2021-09-08T03:46:45.483Z",
+      "distZipFilename": "lex8deae642-4f6a4752434a3669766b-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-chatbot-dev-233944-deployment",
+        "s3Key": "amplify-builds/lex8deae642-4f6a4752434a3669766b-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-chatbot-dev-233944-deployment/amplify-cfn-templates/interactions/lex8deae642-cloudformation-template.json",
+        "logicalId": "interactionslex8deae642"
+      },
+      "lastPushTimeStamp": "2021-09-08T03:48:18.935Z",
+      "output": {
+        "FunctionArn": "arn:aws:lambda:us-east-1:733452200191:function:chatbot_cfnlambda_922c59e2-dev",
+        "Region": "us-east-1",
+        "BotName": "BookTrip_dev"
+      },
+      "lastPushDirHash": "WJIyrxxMLt8NStiyd0FPv1OFXYE="
+    }
+  }
+}
